@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Nashville Software School</title>
+</head>
+
+<body>
+
+<div class="flexbox">
+
+  <nav>
+    <ul>
+      <li>View Music</li>
+      <li>|</li>
+      <li><a href="#">Add Music</a></li>
+      <li>|</li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </nav>
+
+<div class="box1">
+
+  <label for="range">Song length:</label>
+    <input class="slide-bar" type="range" min="0" max="50" value="25" />
+
+<p>
+      <label for="artist-type">Artist:</label>
+        <select class="options" id="artist-type" name="artist-type">
+          <option>Fleetwood Mac</option>
+          <option>Zedd</option>
+          <option>Taylor Swift</option>
+          <option>The Forest Rangers</option>
+          <option>Zhu</option>
+        </select>
+</p>
+
+<p>
+        <label for="alb-op">Album:</label>
+          <select class="options" id="alb-op" name="alb-op">
+            <option>Rumours</option>
+            <option>Stars Come Out</option>
+            <option>1989</option>
+            <option>SOA Soundtrack</option>
+            <option>The Nightday</option>
+          </select>
+</p>
+
+<p>
+
+  <label for="grene">Genre:</label>
+
+    <table>
+      <tr>
+        <td>
+          <input type="checkbox" name="rock" value="rock-m"><label>Rock</label>
+        </td>
+        <td>
+          <input type="checkbox" name="classical" value="clas-m"><label>Classical</label>
+      </td>
+     </tr>
+
+      <tr>
+        <td>
+          <input type="checkbox" name="pop" value="pop-m"><label>Pop</label>
+        </td>
+        <td>
+          <input type="checkbox" name="jazz" value="jazz-m"><label>Jazz</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="checkbox" name="blues" value="blues-m"><label>Blues</label>
+        </td>
+        <td>
+          <input type="checkbox" name="hiphop" value="hip-m"><label>Hip hop</label>
+        </td>
+      </tr>
+      
+  </table>
+
+</p>
+
+  <input type="button" name="filter" value="Filter">
+</div>   
+
+   <div id="box2">
+
+   <input id="more" type="button" name="More" value="More">
+  </div>
+
+      <footer>
+        <h5> Music History Project | Brittney Corona</h5>
+      </footer>
+
+</div>
+
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+
+  <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</body>
+</html>
